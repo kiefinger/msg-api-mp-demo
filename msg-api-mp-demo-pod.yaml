@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: msg-api-mp-demo
+   labels:
+      app: msg-api-mp-demo
+spec:
+   containers:
+     - name: msg-api-server
+       image: kiefinger/msg-api-mp-demo:latest
+       resources:
+         requests:
+           memory: "1Mi"
+       ports:
+         - containerPort: 9081
+           protocol: TCP
+
