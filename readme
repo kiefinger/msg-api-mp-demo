@@ -2,5 +2,5 @@
 
 
 test
-curl localhost:9081/msg-api-mp-demo/System/properties
+curl localhost:9081/msg-api-mp-demo/api/properties
 

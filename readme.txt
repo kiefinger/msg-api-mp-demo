@@ -5,5 +5,5 @@ docker push kiefinger/msg-api-mp-demo:latest
 
 
 test
-curl localhost:9081/msg-api-mp-demo/System/properties
+curl localhost:9080/msg-api-mp-demo/api/properties
 
