@@ -16,7 +16,7 @@ spec:
 #         requests:
 #           memory: "1Mi"
        ports:
-         - containerPort: 9081
+         - containerPort: 9080
            protocol: TCP
        livenessProbe:
          httpGet: 
