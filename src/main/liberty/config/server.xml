@@ -3,6 +3,7 @@
   <!-- tag::featureManager[] -->
   <featureManager>
       <feature>jaxrs-2.1</feature>
+      <feature>mpHealth-2.2</feature>
   </featureManager>
   <!-- end::featureManager[] -->
 
