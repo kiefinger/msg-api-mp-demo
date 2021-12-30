@@ -5,22 +5,10 @@ metadata:
    labels:
       app: msg-api-mp-demo
 spec:
-#   tolerations:
-#   - key: "node.kubernetes.io/disk-pressure"
-#     operator: "Exists"
-#     effect: "NoSchedule"
    containers:
      - name: msg-api-server
        image: kiefinger/msg-api-mp-demo:latest
-#       resources:
-#         requests:
-#           memory: "1Mi"
        ports:
          - containerPort: 9080
            protocol: TCP
-#       livenessProbe:
-#         httpGet: 
-#           path: /msg-api-mp-demo/System/properties
-#           port: 9080
-#         initialDelaySeconds: 10
             

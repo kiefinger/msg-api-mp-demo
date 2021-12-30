@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "liberty2.fullname" . }}
+  name: {{ include "msg-api-mp-demo.fullname" . }}
   labels:
-{{ include "liberty2.labels" . | indent 4 }}
+    {{- include "msg-api-mp-demo.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,5 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app.kubernetes.io/name: {{ include "liberty2.name" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
+    {{- include "msg-api-mp-demo.selectorLabels" . | nindent 4 }}
